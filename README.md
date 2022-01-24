@@ -1,5 +1,5 @@
 # hkk-project
-[githubからソースコード取ってくる](https://github.com/otakouki/hkk)（zipを解凍しその中に入る）
+[githubからソースコード取ってくる](https://github.com/otakouki/hkk-project)（zipを解凍しその中に入る）
 ## 必要備品
 * esp32 １台以上
 * rfid reader １つ
@@ -292,7 +292,7 @@ void loop() {
 *  qt4-qtconfig 
 *  libqt4-test
 
-1. [GitHubから tensorflow-2.7.0-cp37-none-linux_armv7l.whlを取ってくる](https://github.com/otakouki/hkk/releases/tag/tensorflow)
+1. [GitHubから tensorflow-2.7.0-cp37-none-linux_armv7l.whlを取ってくる](https://github.com/otakouki/hkk-project/releases/tag/tensorflow)
 2. tensorflow-2.7.0-cp37-none-linux_armv7l.whlをraspberry piの/home/pi/に入れる 
 
 ### package install
