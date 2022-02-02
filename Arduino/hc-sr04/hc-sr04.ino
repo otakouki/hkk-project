@@ -5,9 +5,9 @@
 
 //接続先のSSODとパスワード 学内CampusuIOT
 //const char ssid[] = "CampusIoT-WiFi";
-const char ssid[] = "ECCcomp4";
+const char ssid[] = "CampusIoT-WiFi";
 const char passwd[] = "0b8b413f2c0fa6aa90e085e9431abbf1fa1b2bd2db0ecf4ae9ce4b2e87da770c";
-const char* apiServer = "http://192.168.0.32:8000/api/notification";
+const char* apiServer = "http://10.200.5.73:8000/api/notification";
 WiFiServer server(80);
 #define Trigger_Pin 17
 #define Echo_Pin 16
@@ -53,7 +53,7 @@ void loop() {
   Serial.print(V * t / 20000);
   Serial.println("cm");
   int num = V * t / 20000;
-  if (num == 1400) {
+  if (num <= 1400) {
     if ((WiFi.status() == WL_CONNECTED)) {
       HTTPClient http;
 
